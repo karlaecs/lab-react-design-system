@@ -1,7 +1,7 @@
-import { clsx } from "clsx"
-export type TextSize = "sm" | "md" | "lg"
+import { clsx } from "clsx";
+export type TextSize = "sm" | "md" | "lg";
 
-import { Slot } from "@radix-ui/react-slot"
+import { Slot } from "@radix-ui/react-slot";
 import { ReactNode } from "react";
 export interface ITextProps {
   size?: TextSize;
@@ -9,16 +9,17 @@ export interface ITextProps {
   asChild?: boolean;
 }
 
-export function Text({ size="md", children, asChild }: ITextProps) {
-  const Comp = asChild ? Slot : 'span'
+export function Text({ size = "md", children, asChild }: ITextProps) {
+  const Comp = asChild ? Slot : "span";
   return (
-    <Comp className={clsx("text-gray-100 font-sans", {
-      "text-xs": size === "sm",
-      "text-sm": size === "md",
-      "text-md": size === "lg",
-    })}
+    <Comp
+      className={clsx("text-gray-100 font-sans", {
+        "text-xs": size === "sm",
+        "text-sm": size === "md",
+        "text-md": size === "lg",
+      })}
     >
-      {children}    
+      {children}
     </Comp>
-  )
+  );
 }
