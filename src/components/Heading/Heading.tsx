@@ -1,4 +1,4 @@
-import { clsx } from 'clsx'
+import clsx from 'clsx'
 import { Slot } from '@radix-ui/react-slot'
 import React, { ReactNode } from 'react'
 

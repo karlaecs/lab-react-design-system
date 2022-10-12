@@ -1,5 +1,5 @@
 import React from 'react'
-import { clsx } from 'clsx'
+import clsx from 'clsx'
 export type TextSize = 'sm' | 'md' | 'lg'
 
 import { Slot } from '@radix-ui/react-slot'
