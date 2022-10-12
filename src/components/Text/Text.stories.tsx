@@ -7,6 +7,7 @@ export default {
   component: Text,
   args: {
     children: 'Lorem Ipsum',
+    size: 'md',
   },
   argTypes: {
     size: {

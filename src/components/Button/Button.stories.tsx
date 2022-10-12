@@ -5,7 +5,7 @@ export default {
   title: 'Components/Button',
   component: Button,
   args: {
-    children: 'Lorem Ipsum',
+    children: 'Save',
   },
   argTypes: {},
 } as Meta<IButtonProps>
