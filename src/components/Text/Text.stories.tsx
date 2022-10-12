@@ -1,36 +1,36 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { Text, ITextProps } from "./Text";
+import React from 'react'
+import { Meta, StoryObj } from '@storybook/react'
+import Text, { ITextProps } from './Text'
 
 export default {
-  title: "Components/Text",
+  title: 'Components/Text',
   component: Text,
   args: {
-    children: "Lorem Ipsum",
-    size: "md",
+    children: 'Lorem Ipsum',
   },
   argTypes: {
     size: {
-      options: ["sm", "md", "lg"],
+      options: ['sm', 'md', 'lg'],
       control: {
-        type: "inline-radio",
+        type: 'inline-radio',
       },
     },
   },
-} as Meta<ITextProps>;
+} as Meta<ITextProps>
 
-export const Default: StoryObj<ITextProps> = {};
+export const Default: StoryObj<ITextProps> = {}
 
 export const Small: StoryObj<ITextProps> = {
   args: {
-    size: "sm",
+    size: 'sm',
   },
-};
+}
 
 export const Large: StoryObj<ITextProps> = {
   args: {
-    size: "lg",
+    size: 'lg',
   },
-};
+}
 
 export const CustomComponent: StoryObj<ITextProps> = {
   args: {
@@ -49,4 +49,4 @@ export const CustomComponent: StoryObj<ITextProps> = {
       },
     },
   },
-};
+}
